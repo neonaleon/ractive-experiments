@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+</head>
+<body>
+  <div id="content">
+    <h2>Input</h2>
+    <input type="text" placeholder="{{placeholder}}" value="{{value}}">
+    <h2>Output</h2>
+    <div>{{value}}</div>
+  </div>
+  <script src="http://cdn.ractivejs.org/latest/ractive.js"></script>
+  <script src="/javascripts/02-server-rendered-client-rerender.js"></script>
+</body>
+</html>
