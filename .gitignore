@@ -1,1 +1,7 @@
 node_modules/
+.tmp/
+npm-debug.log
+parsed/
+
+# files in public/ are generated when distributing
+public/
