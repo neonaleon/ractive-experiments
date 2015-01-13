@@ -15,9 +15,9 @@ router.get('/', function(req, res) {
   fs.readFile(path.join(__dirname, '../../templates/examples/01-server-rendered.ractive'), { encoding: 'utf-8' }, function(err, template){
 
     var page = new Ractive({
-      template: Ractive.parse(template, { interpolate: { script: false } }), // stop ractive from parsing through script tags https://github.com/ractivejs/ractive/issues/1050
+      template: Ractive.parse(template, { interpolate: { script: false, style: false } }), // stop ractive from parsing through script tags https://github.com/ractivejs/ractive/issues/1050
       data: {
-        title: 'Hello World Example',
+        title: 'Server Rendered',
         hello: 'こんにちは',
         world: '世界'
       }
