@@ -1,0 +1,5 @@
+<div class="post" on-click="click">
+  <h2>{{title}}</h2>
+  <p>{{text}}</p>
+  <p>written by {{author}}</p>
+</div>

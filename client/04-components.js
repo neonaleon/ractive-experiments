@@ -20,7 +20,9 @@ var POSTS = [
  */
 var Post = Ractive.extend({
   template: require('../parsed/components/Post'),
-  init: function(){ // called after this component is initialized
+  init: function(){
+    // init is called after this component is initialized
+    // so we can use it to attach event handlers
     this.on('click', function(){
       alert('clicked on ' +  this.get('title'));
     });
