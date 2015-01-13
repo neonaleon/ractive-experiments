@@ -5,11 +5,11 @@
   <title>{{title}}</title>
 </head>
 <body>
-  <div id="content"></div>
+  <div id="container"></div>
   <script src="http://cdn.ractivejs.org/latest/ractive.js"></script>
   <script>
   var ractive = new Ractive({
-    el: '#content', // the element to render into
+    el: '#container', // the element to render into
     template: '<h2>Input</h2><input type="text" placeholder="{{placeholder}}" value="{{value}}"><h2>Output</h2><div>{{value}}</div>',
     data: {
       placeholder: 'Try typing something here!',
