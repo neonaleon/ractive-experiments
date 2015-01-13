@@ -12,35 +12,15 @@ var routes = require('./routes/index');
 
 var app = express();
 
+app.disable('x-powered-by');
+
 /**
  * Register res.render function to use Ractive.
- * @param  {String}   filePath Path of file to render
- * @param  {Object}   options  Options passed from res.render
- * @param  {Function} callback Some express callback
- * @return {String}            Output buffer
  */
 app.engine('ractive', function(filePath, options, callback){
   fs.readFile(filePath, { encoding: 'utf-8' }, function(err, content){
     if (err) throw new Error(err);
-
-    var params = {};
-
-    // if there is a layout, then the content becomes the body
-    if (options.layout) {
-        params.template = fs.readFileSync(options.layout, { encoding: 'utf-8' });
-        params.partials = { body: content }; // TODO: extend options.partials
-    } else {
-        params.template = content;
-    }
-
-    // if there is a model, use the model as the data
-    if (options.model) {
-        params.data = options.model;
-    } else {
-        params.data = options;
-    }
-
-    return callback(null, new Ractive(params).toHTML());
+    return callback(null, new Ractive({ data: options }).toHTML());
   });
 });
 
