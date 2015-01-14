@@ -5,7 +5,7 @@ var Ractive = require('ractive');
 
 router.get('/', function(req, res) {
   /**
-   * Preparsed Templates
+   * Parsed Templates
    * We can use Ractive.parse to parse templates, and then use CommonJS style require
    * Using require also provides the benefit of caching, and opens the possibility of sharing templates using browserify
    * See tasks/ractive.js to see how they are being parsed
