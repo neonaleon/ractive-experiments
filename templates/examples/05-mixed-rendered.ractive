@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+</head>
+<body>
+  <h1>{{static1}}</h1>
+  <div id="container"></div>
+  <h6>{{static2}}</h6>
+  <script src="/javascripts/index.js"></script>
+</body>
+</html>
