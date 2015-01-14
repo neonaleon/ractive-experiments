@@ -6,6 +6,6 @@ module.exports = function clean(grunt) {
 
   // Options
   return {
-    build: [ 'parsed/' ]
+    build: [ 'parsed/', 'public/javascripts/' ]
   };
 };

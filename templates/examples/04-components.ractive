@@ -6,6 +6,6 @@
 </head>
 <body>
   <div id="container"></div>
-  <script src="/javascripts/04-components.js"></script>
+  <script src="/javascripts/examples/04-components.js"></script>
 </body>
 </html>

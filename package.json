@@ -13,9 +13,13 @@
     "grunt": "^0.4.5",
     "hbs": "~2.7.0",
     "morgan": "~1.3.0",
+    "page": "^1.5.0",
     "ractive": "^0.6.1",
+    "ractive-decorators-sortable": "^0.1.0",
+    "ractive-promise-alt": "^0.5.2",
     "serve-favicon": "~2.1.3",
-    "showdown": "^0.3.1"
+    "showdown": "^0.3.1",
+    "superagent": "^0.21.0"
   },
   "devDependencies": {
     "grunt-browserify": "^3.2.1",

@@ -7,9 +7,15 @@ module.exports = function browserify(grunt) {
   // Options
   return {
     build: {
-      files: {
-        'public/javascripts/04-components.js': [ 'client/04-components.js' ]
-      }
+      files: [
+        {
+          expand: true,
+          cwd: 'client/',
+          src: '**/*.js',
+          dest: 'public/javascripts',
+          ext: '.js'
+        }
+      ]
     }
   };
 };
